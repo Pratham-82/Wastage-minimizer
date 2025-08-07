@@ -23,7 +23,6 @@ btn.addEventListener("click", () => {
     arr.push(Number(inp.value));
   });
   let finaloutput = logicfn(arr, ppsize);
-  console.log(finaloutput);
 
   let ul = document.querySelector(".output ul");
   ul.innerHTML = "";
@@ -64,7 +63,7 @@ const logicfn = function (arr, ppsize) {
     //   for (let i = 0; i < num.length; i++) {}
   }
 
-  let output = permu(arr, 6);
+  let output = permu(arr, 10);
   // console.log(output);
   let pairSumArr = [];
 
@@ -93,3 +92,4 @@ const logicfn = function (arr, ppsize) {
   // console.log(y);
   return y;
 };
+
